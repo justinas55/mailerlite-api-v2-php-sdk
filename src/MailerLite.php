@@ -116,6 +116,14 @@ class MailerLite {
     }
 
     /**
+     * @return \MailerLiteApi\Api\Webhooks
+     */
+    public function webhooks()
+    {
+        return new \MailerLiteApi\Api\Webhooks($this->restClient);
+    }
+
+    /**
      * @param  string $version
      * @return string
      */
